@@ -1,0 +1,24 @@
+# Application files
+node_modules/
+npm-debug.log
+
+# Idea project files
+.idea/*
+
+# VS Code project files
+.vscode/
+.vscode/*
+
+# vim
+*.swo
+*.swp
+
+#mac hidden folders/files
+*.DS_Store
+
+
+#jshint files
+.jshintignore
+.jshintrc
+
+coverage/
