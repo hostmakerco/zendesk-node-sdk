@@ -5,8 +5,18 @@
   "main": "lib/index.js",
   "author": "matthew.bridges@hostmaker.co",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint 'lib/**/*.js' --fix"
+  },
   "dependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-promise": "^4.1.1",
     "jest": "^24.7.1",
-    "request-promise": "^4.2.4"
+    "lodash": "^4.17.11",
+    "prettier-eslint-cli": "^4.7.1",
+    "request-promise": "^4.2.4",
+    "walk-sync": "^1.1.3"
   }
 }
