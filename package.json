@@ -2,7 +2,7 @@
   "name": "@hostmakerco/zendesk-node-sdk",
   "version": "0.0.1",
   "description": "Node Wrapper for Zendesk V2 API",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "matthew.bridges@hostmaker.co",
   "license": "MIT",
   "dependencies": {
