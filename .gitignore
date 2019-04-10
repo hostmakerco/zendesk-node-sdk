@@ -1,6 +1,7 @@
 # Application files
 node_modules/
 npm-debug.log
+yarn-error.log
 
 # Idea project files
 .idea/*
