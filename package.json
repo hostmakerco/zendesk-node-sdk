@@ -2,9 +2,10 @@
   "name": "@hostmakerco/zendesk-node-sdk",
   "version": "0.0.1",
   "description": "Node Wrapper for Zendesk V2 API",
+  "repository": "https://github.com/hostmakerco/zendesk-node-sdk.git",
   "main": "lib/index.js",
-  "author": "matthew.bridges@hostmaker.co",
-  "license": "MIT",
+  "author": "",
+  "license": "",
   "scripts": {
     "test": "jest lib"
   },
