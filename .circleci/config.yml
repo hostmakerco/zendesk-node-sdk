@@ -10,7 +10,7 @@ workflows:
         requires:
           - test
       - deploy:
-          context: npm_publish
+          context: npm-publish
           requires:
             - test
             - lint
