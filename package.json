@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "camel-case": "^3.0.0",
-    "lodash": "^4.17.11",
     "request-promise": "^4.2.4",
     "snake-case": "^2.1.0",
     "walk-sync": "^1.1.3"
