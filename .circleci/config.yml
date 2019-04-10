@@ -56,7 +56,7 @@ jobs:
       - checkout
 
       - attach_workspace:
-          at: ~/code
+          at: ~/repo
       - run:
           name: Lint source
           command: yarn ci:lint
