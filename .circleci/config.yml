@@ -7,8 +7,8 @@ workflows:
     jobs:
       - test
       - lint:
-        requires:
-          - test
+          requires:
+            - test
       - deploy:
           context: npm-publish
           requires:
