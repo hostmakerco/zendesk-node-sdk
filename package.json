@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest lib",
     "lint": "eslint --fix ./lib --ignore-pattern ./node_modules",
-    "ci:lint": "eslint --format junit --output-file ./reports/eslint/result.xml ."
+    "ci:lint": "eslint --format junit --output-file ./reports/eslint/result.xml ./lib"
   },
   "dependencies": {
     "camel-case": "^3.0.0",
