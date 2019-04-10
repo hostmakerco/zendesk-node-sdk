@@ -6,14 +6,10 @@ workflows:
   test-deploy:
     jobs:
       - test
-      - lint:
-        requires:
-          - test
       - deploy:
           context: npm-publish
           requires:
             - test
-            - lint
           filters:
             branches:
               only:
@@ -50,17 +46,6 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths: .
-  lint:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/code
-      - run:
-          name: Lint source
-          command: yarn ci:lint
-      - store_test_results:
-          path: ./reports
   deploy:
     <<: *defaults
     steps:
