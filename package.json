@@ -7,7 +7,9 @@
   "author": "",
   "license": "",
   "scripts": {
-    "test": "jest lib"
+    "test": "jest lib",
+    "lint": "eslint --fix ./lib --ignore-pattern ./node_modules",
+    "ci:lint": "eslint --format junit --output-file ./reports/eslint/result.xml ."
   },
   "dependencies": {
     "camel-case": "^3.0.0",
