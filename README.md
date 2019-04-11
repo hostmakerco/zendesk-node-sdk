@@ -36,27 +36,27 @@ Notes:
 
 #### GET
 ```
-const ticket = await zendesk.tickets.get(42, { ... query object ... });
+const ticket = await zendesk.tickets.get(42, { /* GET params */ });
 ```
 
 #### LIST
 ```
-const tickets = await zendesk.tickets.list({ ... query object ... });
+const tickets = await zendesk.tickets.list({ /* GET params */ });
 ```
 
 #### CREATE
 ```
-const ticket = await zendesk.tickets.create({ ... post data ... });
+const ticket = await zendesk.tickets.create({/* POST data */});
 ```
 
 #### UPDATE
 ```
-const ticket = await zendesk.tickets.update(id, { ... post data ... });
+const ticket = await zendesk.tickets.update(42, {/* POST data */});
 ```
 
 #### DELETE
 ```
-await zendesk.tickets.delete(id);
+await zendesk.tickets.delete(42);
 ```
 
 ### Supported Resources
