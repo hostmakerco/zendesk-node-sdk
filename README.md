@@ -24,3 +24,15 @@ const zendesk = Zendesk({ zendeskSubdomain, zendeskAdminToken });
 
 const tickets = await zendesk.tickets.list();
 ```
+
+### Supported Resources
+The Zendesk API is large, and not all API resources have been implemented yet.
+
+Currently supported resources include:
+
+#### Tickets:
+ - Get
+ - List
+ - Create
+ - Update
+ - Delete
