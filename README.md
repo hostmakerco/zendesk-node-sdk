@@ -10,6 +10,7 @@ Zendesk Resources are declared under `lib/resources/**.js`, and will be injected
 ### Libraries used
 * [Node.js](https://nodejs.org/en/)
 * [Jest](https://jestjs.io/)
+* [Nock](https://github.com/nock/nock)
 
 
 ### Creating an API Object
