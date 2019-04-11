@@ -14,6 +14,7 @@ Zendesk Resources are declared under `lib/resources/**.js`, and will be injected
 
 
 ### Creating an API Object
+Currently the API expects that you have curled your own admin token.
 
 ```
 const Zendesk = require('@hostmakerco/zendesk-node-sdk')
@@ -24,22 +25,38 @@ const zendesk = Zendesk({ zendeskSubdomain, zendeskAdminToken })
 ```
 
 ### Querying the API
+
+CRUD actions should follow a common interface.
+
+Notes: 
+ - `queryParameters` and `body` values can be provided in `camelCase`, and will be serialised into `snake_case` as the API expects.
+ - QueryStrings passed to the Zendesk API are accepted as comma separated values. You can however pass your values as an array, and they will be converted into a comma separated list at query time. Ie, `{ ids: [1, 2, 3] }` will become `?ids=1,2,3`
+
+
 #### GET
 ```
-const tickets = await zendesk.tickets.get(42, { queryParams: {} });
+const ticket = await zendesk.tickets.get(42, { queryParams: {} });
 ```
 
 #### LIST
+```
 const tickets = await zendesk.tickets.list({ queryParams: {} });
+```
 
 #### CREATE
-const tickets = await zendesk.tickets.create({ body: {} });
+```
+const ticket = await zendesk.tickets.create({ body: {} });
+```
 
 #### UPDATE
-const tickets = await zendesk.tickets.update(id, { body: {} });
+```
+const ticket = await zendesk.tickets.update(id, { body: {} });
+```
 
 #### DELETE
-const tickets = await zendesk.tickets.delete(id);
+```
+await zendesk.tickets.delete(id);
+```
 
 ### Supported Resources
 The Zendesk API is large, and not all API resources have been implemented yet.
