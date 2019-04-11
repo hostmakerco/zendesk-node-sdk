@@ -29,8 +29,8 @@ const zendesk = Zendesk({ zendeskSubdomain, zendeskAdminToken })
 CRUD actions should follow a common interface.
 
 Notes: 
- - `queryParameters` and `body` values can be provided in `camelCase`, and will be serialised into `snake_case` as the API expects.
- - QueryStrings passed to the Zendesk API are accepted as comma separated values. You can however pass your values as an array, and they will be converted into a comma separated list at query time. Ie, `{ ids: [1, 2, 3] }` will become `?ids=1,2,3`
+ - `queryParams` and `body` values can be provided in `camelCase`, and will be serialised into `snake_case` as the API expects.
+ - GET requests to the Zendesk API expect Array values to be provided as comma separated values. The package will transform any Array values that are passed into a `queryParams` object at time. Ie, `{ ids: [1, 2, 3] }` will become `?ids=1,2,3`
  - List data is auto-sorted by most recently created.
 
 
