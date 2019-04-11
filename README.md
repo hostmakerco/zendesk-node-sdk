@@ -20,10 +20,26 @@ const Zendesk = require('@hostmakerco/zendesk-node-sdk')
 
 const zendeskSubdomain = 'hostmaker_support';
 const zendeskAdminToken = 'adminToken';
-const zendesk = Zendesk({ zendeskSubdomain, zendeskAdminToken });
-
-const tickets = await zendesk.tickets.list();
+const zendesk = Zendesk({ zendeskSubdomain, zendeskAdminToken })
 ```
+
+### Querying the API
+#### GET
+```
+const tickets = await zendesk.tickets.get(42, { queryParams: {} });
+```
+
+#### LIST
+const tickets = await zendesk.tickets.list({ queryParams: {} });
+
+#### CREATE
+const tickets = await zendesk.tickets.create({ body: {} });
+
+#### UPDATE
+const tickets = await zendesk.tickets.update(id, { body: {} });
+
+#### DELETE
+const tickets = await zendesk.tickets.delete(id);
 
 ### Supported Resources
 The Zendesk API is large, and not all API resources have been implemented yet.
