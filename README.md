@@ -19,7 +19,7 @@ Currently the API expects that you have curled your own admin token.
 ```
 const Zendesk = require('@hostmakerco/zendesk-node-sdk')
 
-const zendeskSubdomain = 'hostmaker_support';
+const zendeskSubdomain = 'hostmakersupport';
 const zendeskAdminToken = 'adminToken';
 const zendesk = Zendesk({ zendeskSubdomain, zendeskAdminToken })
 ```
