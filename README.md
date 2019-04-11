@@ -31,26 +31,27 @@ CRUD actions should follow a common interface.
 Notes: 
  - `queryParameters` and `body` values can be provided in `camelCase`, and will be serialised into `snake_case` as the API expects.
  - QueryStrings passed to the Zendesk API are accepted as comma separated values. You can however pass your values as an array, and they will be converted into a comma separated list at query time. Ie, `{ ids: [1, 2, 3] }` will become `?ids=1,2,3`
+ - List data is auto-sorted by most recently created.
 
 
 #### GET
 ```
-const ticket = await zendesk.tickets.get(42, { queryParams: {} });
+const ticket = await zendesk.tickets.get(42, { ... query object ... });
 ```
 
 #### LIST
 ```
-const tickets = await zendesk.tickets.list({ queryParams: {} });
+const tickets = await zendesk.tickets.list({ ... query object ... });
 ```
 
 #### CREATE
 ```
-const ticket = await zendesk.tickets.create({ body: {} });
+const ticket = await zendesk.tickets.create({ ... post data ... });
 ```
 
 #### UPDATE
 ```
-const ticket = await zendesk.tickets.update(id, { body: {} });
+const ticket = await zendesk.tickets.update(id, { ... post data ... });
 ```
 
 #### DELETE
