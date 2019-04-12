@@ -69,4 +69,6 @@ jobs:
           at: ~/repo
       - run:
           name: Publish package
-          command: yarn publish
+          command: |
+            npx semantic-release
+            
