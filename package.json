@@ -1,6 +1,6 @@
 {
   "name": "@hostmakerco/zendesk-node-sdk",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Node Wrapper for Zendesk V2 API",
   "repository": "https://github.com/hostmakerco/zendesk-node-sdk.git",
   "main": "lib/index.js",
@@ -29,7 +29,8 @@
     "jest": "^24.7.1",
     "nock": "^10.0.6",
     "prettier": "^1.16.4",
-    "prettier-eslint-cli": "^4.7.1"
+    "prettier-eslint-cli": "^4.7.1",
+    "semantic-release": "^15.13.3"
   },
   "husky": {
     "hooks": {
