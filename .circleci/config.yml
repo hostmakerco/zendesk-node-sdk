@@ -17,6 +17,7 @@ workflows:
           filters:
             branches:
               only:
+                - develop
                 - master
 
 defaults: &defaults
