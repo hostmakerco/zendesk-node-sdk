@@ -10,7 +10,7 @@ workflows:
           requires:
             - test
       - deploy:
-          context: npm-publish
+          context: npm_publish
           requires:
             - test
             - lint
@@ -70,5 +70,8 @@ jobs:
       - run:
           name: Publish package
           command: |
+            git config --global user.email "circleci@hostmaker.co"
+            git config --global user.name "CircleCI"
+            git branch -u origin/develop
             npx semantic-release
             
