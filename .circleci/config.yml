@@ -70,7 +70,7 @@ jobs:
           at: ~/repo
       - add_ssh_keys:
           fingerprints:
-            - "d2:51:0d:78:42:40:24:92:fe:b0:c1:f5:27:4c:9c:61"
+            - "da:28:93:a2:75:de:ad:b1:24:28:ca:7c:a1:45:4b:38"
       - run:
           name: Publish package
           command: |
