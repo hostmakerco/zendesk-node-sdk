@@ -4,8 +4,8 @@
   "description": "Node Wrapper for Zendesk V2 API",
   "repository": "https://github.com/hostmakerco/zendesk-node-sdk.git",
   "main": "lib/index.js",
-  "author": "",
-  "license": "",
+  "author": "Hostmaker",
+  "license": "MIT",
   "scripts": {
     "test": "jest lib",
     "lint": "eslint --fix ./lib --ignore-pattern ./node_modules",
