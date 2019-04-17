@@ -76,6 +76,6 @@ jobs:
             yarn version --patch
             yarn publish
             git add package.json
-            git commit -m “[ci skip] version bump”
+            git commit -m "[ci skip] version bump"
             git push
 
