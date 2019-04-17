@@ -34,19 +34,19 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "yarn.lock" }}
           - v1-dependencies-
-      
+
       - run:
           name: Install dependencies
           command: yarn
       - run:
           name: Run Tests
           command: yarn test
-      
+
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
-      
+
       - persist_to_workspace:
           root: ~/repo
           paths: .
@@ -73,8 +73,9 @@ jobs:
             git config --global user.email "circleci@hostmaker.co"
             git config --global user.name "CircleCI"
             git branch -u origin/master
-            yarn version --minor
+            yarn version --patch
             yarn publish
-            git commit -am “[ci skip] version bump”
+            git add package.json
+            git commit -m “[ci skip] version bump”
             git push
-            
+
