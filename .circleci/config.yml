@@ -67,9 +67,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-      - add_ssh_keys:
-          fingerprints:
-            - "da:28:93:a2:75:de:ad:b1:24:28:ca:7c:a1:45:4b:38"
       - run:
           name: Publish package
           command: |
