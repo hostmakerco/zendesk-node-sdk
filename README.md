@@ -6,6 +6,9 @@ Documentation for the API can be found at: https://developer.zendesk.com/rest_ap
 
 Zendesk Resources are declared under `lib/resources/**.js`, and will be injected into the `lib/api/index.js` object, which is then exported from `lib/index.js`.
 
+### Installation
+`yarn add zendesk-node`
+
 
 ### Libraries used
 * [Node.js](https://nodejs.org/en/)
