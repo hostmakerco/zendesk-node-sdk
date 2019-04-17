@@ -12,16 +12,27 @@ Zendesk Resources are declared under `lib/resources/**.js`, and will be injected
 * [Jest](https://jestjs.io/)
 * [Nock](https://github.com/nock/nock)
 
+### Installation
+
+```bash
+yarn add zendesk-node
+# or
+npm install zendesk-node --save
+```
 
 ### Creating an API Object
 Currently the API expects that you have curled your own admin token.
 
-```
-const Zendesk = require('zendesk-node')
+```js
+const Zendesk = require('zendesk-node');
 
 const zendeskSubdomain = 'hostmakersupport';
 const zendeskAdminToken = 'adminToken';
-const zendesk = Zendesk({ zendeskSubdomain, zendeskAdminToken })
+
+const zendesk = Zendesk({
+  zendeskSubdomain,
+  zendeskAdminToken
+})
 ```
 
 ### Querying the API
@@ -35,27 +46,27 @@ Notes:
 
 
 #### GET
-```
+```js
 const ticket = await zendesk.tickets.get(42, { /* GET params */ });
 ```
 
 #### LIST
-```
+```js
 const tickets = await zendesk.tickets.list({ /* GET params */ });
 ```
 
 #### CREATE
-```
+```js
 const ticket = await zendesk.tickets.create({/* POST data */});
 ```
 
 #### UPDATE
-```
+```js
 const ticket = await zendesk.tickets.update(42, {/* POST data */});
 ```
 
 #### DELETE
-```
+```js
 await zendesk.tickets.delete(42);
 ```
 
