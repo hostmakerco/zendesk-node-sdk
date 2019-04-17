@@ -78,5 +78,6 @@ jobs:
             git add package.json
             git add yarn.lock
             git commit -m "[ci skip] version bump"
+            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
             git push
 
