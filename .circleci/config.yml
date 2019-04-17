@@ -75,6 +75,11 @@ jobs:
             git branch -u origin/master
             yarn version --minor
             yarn publish
+<<<<<<< Updated upstream
             git commit -am “[ci skip] version bump”
+=======
+            git add package.json
+            git commit -m "[ci skip] version bump"
+>>>>>>> Stashed changes
             git push
             
