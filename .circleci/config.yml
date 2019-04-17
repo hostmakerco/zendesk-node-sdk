@@ -73,5 +73,8 @@ jobs:
             git config --global user.email "circleci@hostmaker.co"
             git config --global user.name "CircleCI"
             git branch -u origin/master
-            npx semantic-release
+            yarn version --minor
+            yarn publish
+            git commit -am “[ci skip] version bump”
+            git push
             
