@@ -73,3 +73,4 @@ Currently supported resources include:
  - Create
  - Update
  - Delete
+ - ListComments
