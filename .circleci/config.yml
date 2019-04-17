@@ -72,6 +72,6 @@ jobs:
           command: |
             git config --global user.email "circleci@hostmaker.co"
             git config --global user.name "CircleCI"
-            git branch -u origin/develop
+            git branch -u origin/master
             npx semantic-release
             
