@@ -17,7 +17,7 @@ Zendesk Resources are declared under `lib/resources/**.js`, and will be injected
 Currently the API expects that you have curled your own admin token.
 
 ```
-const Zendesk = require('@hostmakerco/zendesk-node-sdk')
+const Zendesk = require('zendesk-node')
 
 const zendeskSubdomain = 'hostmakersupport';
 const zendeskAdminToken = 'adminToken';
