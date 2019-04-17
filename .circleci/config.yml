@@ -76,6 +76,7 @@ jobs:
             yarn version --patch
             yarn publish --access public
             git add package.json
+            git add yarn.lock
             git commit -m "[ci skip] version bump"
             git push
 
