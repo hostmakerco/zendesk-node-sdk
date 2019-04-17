@@ -1,6 +1,5 @@
 version: 2
 
-
 workflows:
   version: 2
   test-deploy:
@@ -68,9 +67,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-      - add_ssh_keys:
-          fingerprints:
-            - "SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8"
       - run:
           name: Publish package
           command: |
