@@ -13,11 +13,6 @@ workflows:
           requires:
             - test
             - lint
-          filters:
-            branches:
-              only:
-                - develop
-                - master
 
 defaults: &defaults
   working_directory: ~/repo
