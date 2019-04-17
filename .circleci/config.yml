@@ -34,19 +34,19 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "yarn.lock" }}
           - v1-dependencies-
-      
+
       - run:
           name: Install dependencies
           command: yarn
       - run:
           name: Run Tests
           command: yarn test
-      
+
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
-      
+
       - persist_to_workspace:
           root: ~/repo
           paths: .
@@ -75,11 +75,7 @@ jobs:
             git branch -u origin/master
             yarn version --minor
             yarn publish
-<<<<<<< Updated upstream
-            git commit -am “[ci skip] version bump”
-=======
             git add package.json
             git commit -m "[ci skip] version bump"
->>>>>>> Stashed changes
             git push
-            
+
