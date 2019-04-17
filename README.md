@@ -1,5 +1,8 @@
 # Zendesk NodeJS SDK
 
+[![CircleCI](https://circleci.com/gh/hostmakerco/zendesk-node-sdk.svg?style=svg)](https://circleci.com/gh/hostmakerco/zendesk-node-sdk) 
+
+
 The Zendesk NodeJS SDK provides a wrapper around the Zendesk V2 REST JSON API.
 
 Documentation for the API can be found at: https://developer.zendesk.com/rest_api/docs/zendesk-apis/resources
