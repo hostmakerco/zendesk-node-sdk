@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "camel-case": "^3.0.0",
+    "js-base64": "^2.5.1",
     "request-promise": "^4.2.4",
     "snake-case": "^2.1.0",
     "walk-sync": "^1.1.3"
