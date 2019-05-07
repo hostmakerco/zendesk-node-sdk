@@ -35,29 +35,29 @@ const Zendesk = require('zendesk-node');
 const email = 'AGENT_S_EMAIL_ADDRESS';
 const password = 'AGENT_S_PASSWORD';
 const zendeskSubdomain = 'ZENDESK_SUBDOMAIN';
-const zendesk = Zendesk({ authType: AUTH_TYPES.BASIC_AUTH, zendeskSubdomain, email, password });
+const zendesk = Zendesk({ authType: Zendesk.AUTH_TYPES.BASIC_AUTH, zendeskSubdomain, email, password });
 ```
 
 #### API token
 
 ```js
-const Zendesk, { AUTH_TYPES } = require('zendesk-node');
+const Zendesk = require('zendesk-node');
 
 const email = 'AGENT_S_EMAIL_ADDRESS';
 const zendeskSubdomain = 'ZENDESK_SUBDOMAIN';
 const zendeskAdminToken = 'API_TOKEN'; // Login to your Zendesk's Agent and go to Admin -> API to generate.
-const zendesk = Zendesk({ authType: AUTH_TYPES.API_TOKEN, zendeskSubdomain, email, zendeskAdminToken });
+const zendesk = Zendesk({ authType: Zendesk.AUTH_TYPES.API_TOKEN, zendeskSubdomain, email, zendeskAdminToken });
 ```
 
 #### Oauth access token
 Currently the API expects that you have curled your own admin token.
 
 ```js
-const Zendesk, { AUTH_TYPES } = require('zendesk-node');
+const Zendesk = require('zendesk-node');
 
 const zendeskSubdomain = 'ZENDESK_SUBDOMAIN';
 const zendeskAdminToken = 'OAUTH_ACCESS_TOKEN';
-const zendesk = Zendesk({ authType: AUTH_TYPES.OAUTH_ACCESS_TOKEN, zendeskSubdomain, zendeskAdminToken });
+const zendesk = Zendesk({ authType: Zendesk.AUTH_TYPES.OAUTH_ACCESS_TOKEN, zendeskSubdomain, zendeskAdminToken });
 ```
 
 Note: if `authType` is omitted the sdk defaults to oauth access token method.
