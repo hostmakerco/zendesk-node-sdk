@@ -79,7 +79,7 @@ jobs:
             git config --global user.email "circleci@hostmaker.co"
             git config --global user.name "CircleCI"
             git branch -u origin master
-            yarn version --patch
+            yarn version --patch --no-git-tag-version
             yarn publish --access public
             git add package.json
             git add yarn.lock
