@@ -78,11 +78,11 @@ jobs:
           command: |
             git config --global user.email "circleci@hostmaker.co"
             git config --global user.name "CircleCI"
-            git branch -u origin/master
+            git branch -u origin master
             yarn version --patch
             yarn publish --access public
             git add package.json
             git add yarn.lock
             git commit -m "[ci skip] version bump"
-            git push
+            git push -u origin master
 
