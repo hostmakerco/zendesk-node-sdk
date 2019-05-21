@@ -103,14 +103,28 @@ The Zendesk API is large, and not all API resources have been implemented yet.
 Currently supported resources include:
 
 #### Tickets
- - [Show Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#show-ticket)
- - [List Tickets](https://developer.zendesk.com/rest_api/docs/support/tickets#list-tickets)
- - [Create Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#create-ticket)
- - [Update Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#update-ticket)
- - [Delete Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#delete-ticket)
+ - [Show Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#show-ticket): `zendesk.tickets.get(id, queryParams)`
+ - [List Tickets](https://developer.zendesk.com/rest_api/docs/support/tickets#list-tickets): `zendesk.tickets.list(queryParams)`
+ - [Create Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#create-ticket): `zendesk.tickets.create(body)`
+ - [Update Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#update-ticket): `zendesk.tickets.update(id, body)`
+ - [Delete Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#delete-ticket): `zendesk.tickets.delete(id)`
 
 #### Ticket comments
- - [List Comments](https://developer.zendesk.com/rest_api/docs/support/ticket_comments#list-comments)
+ - [List Comments](https://developer.zendesk.com/rest_api/docs/support/ticket_comments#list-comments): `zendesk.tickets.listComments(id, queryParams)`
+
+#### User identities
+ - [Show Identities](https://developer.zendesk.com/rest_api/docs/support/user_identities#show-identity): `zendesk.usersIdentities.get(userId, id, queryParams)`
+ - [List Identities](https://developer.zendesk.com/rest_api/docs/support/user_identities#list-identities): `zendesk.usersIdentities.list(userId, queryParams)`
+ - [Create Identity](https://developer.zendesk.com/rest_api/docs/support/user_identities#create-identity): `zendesk.usersIdentities.create(userId, body)`
+ - [Update Identify](https://developer.zendesk.com/rest_api/docs/support/user_identities#update-identity): `zendesk.usersIdentities.update(userId, id, body)`
+ - [Make Identity Primary](https://developer.zendesk.com/rest_api/docs/support/user_identities#make-identity-primary): `zendesk.usersIdentities.makePrimary(userId, id)`
+ - [Delete Identity](https://developer.zendesk.com/rest_api/docs/support/user_identities#delete-identity): `zendesk.usersIdentities.delete(userId, id)`
+
+#### Search
+ - [List Search Results](https://developer.zendesk.com/rest_api/docs/support/search#list-search-results): `zendesk.search(queryParams)`
 
 #### Users
- - [Autocomplete Users](https://developer.zendesk.com/rest_api/docs/support/users#autocomplete-users)
+ - [Show User](https://developer.zendesk.com/rest_api/docs/support/users#show-user): `zendesk.users.get(id, queryParams)`
+ - [Create User](https://developer.zendesk.com/rest_api/docs/support/users#create-user): `zendesk.users.create(body)`
+ - [Update User](https://developer.zendesk.com/rest_api/docs/support/users#update-user): `zendesk.users.update(id, body)`
+ - [Autocomplete Users](https://developer.zendesk.com/rest_api/docs/support/users#autocomplete-users): `zendesk.users.autocomplete(queryParams)`
