@@ -66,7 +66,7 @@ Note: if `authType` is omitted the sdk defaults to oauth access token method.
 
 CRUD actions should follow a common interface.
 
-Notes: 
+Notes:
  - `queryParams` and `body` values can be provided in `camelCase`, and will be serialised into `snake_case` as the API expects.
  - GET requests to the Zendesk API expect Array values to be provided as comma separated values. The package will transform any Array values that are passed into a `queryParams` object at time. Ie, `{ ids: [1, 2, 3] }` will become `?ids=1,2,3`
  - List data is auto-sorted by most recently created.
@@ -125,6 +125,8 @@ Currently supported resources include:
 
 #### Users
  - [Show User](https://developer.zendesk.com/rest_api/docs/support/users#show-user): `zendesk.users.get(id, queryParams)`
+ - [List Users](https://developer.zendesk.com/rest_api/docs/support/users#list-users): `zendesk.users.list(queryParams)`
  - [Create User](https://developer.zendesk.com/rest_api/docs/support/users#create-user): `zendesk.users.create(body)`
  - [Update User](https://developer.zendesk.com/rest_api/docs/support/users#update-user): `zendesk.users.update(id, body)`
+ - [Create or Update User](https://developer.zendesk.com/rest_api/docs/support/users#create-or-update-user): `zendesk.users.createOrUpdate(body)`
  - [Autocomplete Users](https://developer.zendesk.com/rest_api/docs/support/users#autocomplete-users): `zendesk.users.autocomplete(queryParams)`
