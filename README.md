@@ -124,9 +124,26 @@ Currently supported resources include:
  - [List Search Results](https://developer.zendesk.com/rest_api/docs/support/search#list-search-results): `zendesk.search(queryParams)`
 
 #### Users
+ - [List User](https://developer.zendesk.com/rest_api/docs/support/users#list-users): `zendesk.users.list(queryParams)`, `zendesk.users.listByGroup(groupId, queryParams)`, `zendesk.users.listByOrganization(organizationId, queryParams)`, 
  - [Show User](https://developer.zendesk.com/rest_api/docs/support/users#show-user): `zendesk.users.get(id, queryParams)`
  - [List Users](https://developer.zendesk.com/rest_api/docs/support/users#list-users): `zendesk.users.list(queryParams)`
  - [Create User](https://developer.zendesk.com/rest_api/docs/support/users#create-user): `zendesk.users.create(body)`
  - [Update User](https://developer.zendesk.com/rest_api/docs/support/users#update-user): `zendesk.users.update(id, body)`
  - [Create or Update User](https://developer.zendesk.com/rest_api/docs/support/users#create-or-update-user): `zendesk.users.createOrUpdate(body)`
+ - [Delete User](https://developer.zendesk.com/rest_api/docs/support/users#delete-user): `zendesk.users.delete(id)`
  - [Autocomplete Users](https://developer.zendesk.com/rest_api/docs/support/users#autocomplete-users): `zendesk.users.autocomplete(queryParams)`
+
+#### Groups
+ - [List Group](https://developer.zendesk.com/rest_api/docs/support/groups#list-groups): `zendesk.groups.list(queryParams)`, `zendesk.groups.listByUser(userId, queryParams)`
+ - [Show Group](https://developer.zendesk.com/rest_api/docs/support/groups#show-group): `zendesk.groups.get(id, queryParams)`
+ - [Create Group](https://developer.zendesk.com/rest_api/docs/support/groups#create-group): `zendesk.groups.create(body)`
+ - [Update Group](https://developer.zendesk.com/rest_api/docs/support/groups#update-group): `zendesk.groups.update(id, body)`
+ - [Delete Group](https://developer.zendesk.com/rest_api/docs/support/groups#delete-group): `zendesk.groups.delete(id)`
+
+#### Group Memberships
+ - [List Memberships](https://developer.zendesk.com/rest_api/docs/support/group_memberships#list-memberships): `zendesk.groupMemberships.list(queryParams)`, `zendesk.groupMemberships.listByUser(userId, queryParams)`, `zendesk.groupMemberships.listByGroup(groupId, queryParams)`
+ - [List Assignable Memberships](https://developer.zendesk.com/rest_api/docs/support/group_memberships#list-assignable-memberships) `zendesk.groupMemberships.listAssignables(queryParams)`, `zendesk.groupMemberships.listAssignablesByGroup(groupId, queryParams)`
+ - [Show Membership](https://developer.zendesk.com/rest_api/docs/support/group_memberships#show-membership): `zendesk.groupMemberships.get(id, queryParams)`, `zendesk.groupMemberships.getByUser(userId, id, queryParams)`
+ - [Create Membership](https://developer.zendesk.com/rest_api/docs/support/group_memberships#create-membership): `zendesk.groupMemberships.create(body)`
+ - [Delete Membership](https://developer.zendesk.com/rest_api/docs/support/group_memberships#delete-membership): `zendesk.groupMemberships.delete(id)`, `zendesk.groupMemberships.deleteByUser(userId, id)`
+ - [Set Membership as Default](https://developer.zendesk.com/rest_api/docs/support/group_memberships#set-membership-as-default): `zendesk.groupMemberships.setAsDefault(userId, membershipId, body)`
