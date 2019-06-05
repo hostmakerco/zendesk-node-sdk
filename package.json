@@ -1,6 +1,6 @@
 {
   "name": "zendesk-node",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "Node Wrapper for Zendesk V2 API",
   "repository": "https://github.com/hostmakerco/zendesk-node-sdk.git",
   "main": "lib/index.js",
