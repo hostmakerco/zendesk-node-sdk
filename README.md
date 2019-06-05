@@ -89,7 +89,7 @@ const ticket = await zendesk.tickets.create({/* POST data */});
 
 #### CREATE MANY
 ```js
-const ticket = await zendesk.tickets.create({/* POST data */});
+const ticket = await zendesk.tickets.createMany({/* POST data */});
 ```
 
 #### UPDATE
@@ -111,7 +111,8 @@ Currently supported resources include:
  - [Show Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#show-ticket): `zendesk.tickets.get(id, queryParams)`
  - [List Tickets](https://developer.zendesk.com/rest_api/docs/support/tickets#list-tickets): `zendesk.tickets.list(queryParams)`
  - [Create Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#create-ticket): `zendesk.tickets.create(body)`
- - [Update Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#update-ticket): `zendesk.tickets.update(id, body)`
+ - [Ticket Bulk Import](https://developer.zendesk.com/rest_api/docs/support/ticket_import#ticket-bulk-import): `zendesk.tickets.createMany(body)`
+  - [Update Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#update-ticket): `zendesk.tickets.update(id, body)`
  - [Delete Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#delete-ticket): `zendesk.tickets.delete(id)`
 
 #### Ticket comments
