@@ -87,6 +87,11 @@ const tickets = await zendesk.tickets.list({ /* GET params */ });
 const ticket = await zendesk.tickets.create({/* POST data */});
 ```
 
+#### CREATE MANY
+```js
+const ticket = await zendesk.tickets.create({/* POST data */});
+```
+
 #### UPDATE
 ```js
 const ticket = await zendesk.tickets.update(42, {/* POST data */});
