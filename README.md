@@ -110,10 +110,12 @@ Currently supported resources include:
 #### Tickets
  - [Show Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#show-ticket): `zendesk.tickets.get(id, queryParams)`
  - [List Tickets](https://developer.zendesk.com/rest_api/docs/support/tickets#list-tickets): `zendesk.tickets.list(queryParams)`
+ - [List User Tickets](https://developer.zendesk.com/rest_api/docs/support/tickets#list-tickets): `zendesk.tickets.listTicketsByType(userId, type)` - Valid Types: [ requested |ccd | assigned ]
  - [Create Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#create-ticket): `zendesk.tickets.create(body)`
  - [Ticket Bulk Import](https://developer.zendesk.com/rest_api/docs/support/ticket_import#ticket-bulk-import): `zendesk.tickets.createMany(body)`
-  - [Update Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#update-ticket): `zendesk.tickets.update(id, body)`
+ - [Update Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#update-ticket): `zendesk.tickets.update(id, body)`
  - [Delete Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#delete-ticket): `zendesk.tickets.delete(id)`
+ - [Bulk Delete](https://developer.zendesk.com/rest_api/docs/support/tickets#bulk-delete-tickets): `zendesk.tickets.bulkDelete(ids)`
 
 #### Ticket comments
  - [List Comments](https://developer.zendesk.com/rest_api/docs/support/ticket_comments#list-comments): `zendesk.tickets.listComments(id, queryParams)`
