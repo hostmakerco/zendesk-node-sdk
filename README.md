@@ -134,6 +134,7 @@ Currently supported resources include:
 #### Users
  - [List User](https://developer.zendesk.com/rest_api/docs/support/users#list-users): `zendesk.users.list(queryParams)`, `zendesk.users.listByGroup(groupId, queryParams)`, `zendesk.users.listByOrganization(organizationId, queryParams)`, 
  - [Show User](https://developer.zendesk.com/rest_api/docs/support/users#show-user): `zendesk.users.get(id, queryParams)`
+ - [Show Many](https://developer.zendesk.com/rest_api/docs/support/users#show-many-users): `zendesk.users.getMany(queryParams)`
  - [List Users](https://developer.zendesk.com/rest_api/docs/support/users#list-users): `zendesk.users.list(queryParams)`
  - [Create User](https://developer.zendesk.com/rest_api/docs/support/users#create-user): `zendesk.users.create(body)`
  - [Update User](https://developer.zendesk.com/rest_api/docs/support/users#update-user): `zendesk.users.update(id, body)`
