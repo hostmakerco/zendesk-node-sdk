@@ -116,6 +116,7 @@ Currently supported resources include:
  - [Update Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#update-ticket): `zendesk.tickets.update(id, body)`
  - [Delete Ticket](https://developer.zendesk.com/rest_api/docs/support/tickets#delete-ticket): `zendesk.tickets.delete(id)`
  - [Bulk Delete](https://developer.zendesk.com/rest_api/docs/support/tickets#bulk-delete-tickets): `zendesk.tickets.bulkDelete(ids)`
+ - [Merge Tickets](https://developer.zendesk.com/rest_api/docs/support/tickets#merge-tickets-into-target-ticket): `zendesk.tickets.merge(id, body)`
 
 #### Ticket comments
  - [List Comments](https://developer.zendesk.com/rest_api/docs/support/ticket_comments#list-comments): `zendesk.tickets.listComments(id, queryParams)`
