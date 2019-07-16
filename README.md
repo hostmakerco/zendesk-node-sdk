@@ -118,6 +118,14 @@ Currently supported resources include:
  - [Bulk Delete](https://developer.zendesk.com/rest_api/docs/support/tickets#bulk-delete-tickets): `zendesk.tickets.bulkDelete(ids)`
  - [Merge Tickets](https://developer.zendesk.com/rest_api/docs/support/tickets#merge-tickets-into-target-ticket): `zendesk.tickets.merge(id, body)`
 
+ #### Views
+ - [Show View](https://developer.zendesk.com/rest_api/docs/support/views#show-view): `zendesk.views.get(id, queryParams)`
+ - [List Views](https://developer.zendesk.com/rest_api/docs/support/views#list-views): `zendesk.views.list(queryParams)`
+ - [List View Tickets](https://developer.zendesk.com/rest_api/docs/support/views#list-tickets-from-a-view): `zendesk.views.listTickets(viewId, queryParams)`
+ - [Create View](https://developer.zendesk.com/rest_api/docs/support/views#create-view): `zendesk.views.create(body)`
+ - [Update View](https://developer.zendesk.com/rest_api/docs/support/views#update-view): `zendesk.views.update(id, body)`
+ - [Delete View](https://developer.zendesk.com/rest_api/docs/support/views#delete-view): `zendesk.views.delete(id)`
+ 
 #### Ticket comments
  - [List Comments](https://developer.zendesk.com/rest_api/docs/support/ticket_comments#list-comments): `zendesk.tickets.listComments(id, queryParams)`
 
