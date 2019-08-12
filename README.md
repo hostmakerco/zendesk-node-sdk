@@ -167,16 +167,16 @@ Currently supported resources include:
  - [Set Membership as Default](https://developer.zendesk.com/rest_api/docs/support/group_memberships#set-membership-as-default): `zendesk.groupMemberships.setAsDefault(userId, membershipId, body)`
 
  ### Tags
+  ```
+    ENTITY_TYPES = {
+      organization: 'organizations',
+      ticket: 'tickets',
+      user: 'users',
+    };
+  ```
+
  - [List All Tags](https://developer.zendesk.com/rest_api/docs/support/tags#list-tags): `zendesk.tags.list(queryParams)`
- - [List Tags For Ticket](https://developer.zendesk.com/rest_api/docs/support/tags#show-tags): `zendesk.tags.listForTicket(ticketId, queryParams)`
- - [Set Tags For Ticket](https://developer.zendesk.com/rest_api/docs/support/tags#set-tags): `zendesk.tags.setForTicket(ticketId, body)`
- - [Delete Tags For Ticket](https://developer.zendesk.com/rest_api/docs/support/tags#remove-tags): `zendesk.tags.deleteForTicket(ticketId)`
- - [Add Tags For Ticket](https://developer.zendesk.com/rest_api/docs/support/tags#add-tags): `zendesk.tags.addForTicket(ticketId, body)`
- - [List Tags For User](https://developer.zendesk.com/rest_api/docs/support/tags#show-tags): `zendesk.tags.listForUser(userId, queryParams)`
- - [Set Tags For User](https://developer.zendesk.com/rest_api/docs/support/tags#set-tags): `zendesk.tags.setForUser(userId, body)`
- - [Delete Tags For User](https://developer.zendesk.com/rest_api/docs/support/tags#remove-tags): `zendesk.tags.deleteForUser(userId)`
- - [Add Tags For User](https://developer.zendesk.com/rest_api/docs/support/tags#add-tags): `zendesk.tags.addForTicket(userId, body)`
- - [List Tags For Organization](https://developer.zendesk.com/rest_api/docs/support/tags#show-tags): `zendesk.tags.listForOrganization(organizationId, queryParams)`
- - [Set Tags For Organization](https://developer.zendesk.com/rest_api/docs/support/tags#set-tags): `zendesk.tags.setForOrganization(organizationId, body)`
- - [Delete Tags For Organization](https://developer.zendesk.com/rest_api/docs/support/tags#remove-tags): `zendesk.tags.deleteForOrganization(organizationId)`
- - [Add Tags For Organization](https://developer.zendesk.com/rest_api/docs/support/tags#add-tags): `zendesk.tags.addForTicket(organizationId, body)`
+ - [List Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#show-tags): `zendesk.tags.listFor(ticketId, entity, queryParams)`
+ - [Add Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#add-tags): `zendesk.tags.addForTicket(ticketId, entity, body)`
+ - [Set Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#set-tags): `zendesk.tags.setFor(ticketId, entity, body)`
+ - [Delete Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#remove-tags): `zendesk.tags.deleteForTicket(ticketId, entity)`
