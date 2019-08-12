@@ -165,3 +165,18 @@ Currently supported resources include:
  - [Create Membership](https://developer.zendesk.com/rest_api/docs/support/group_memberships#create-membership): `zendesk.groupMemberships.create(body)`
  - [Delete Membership](https://developer.zendesk.com/rest_api/docs/support/group_memberships#delete-membership): `zendesk.groupMemberships.delete(id)`, `zendesk.groupMemberships.deleteByUser(userId, id)`
  - [Set Membership as Default](https://developer.zendesk.com/rest_api/docs/support/group_memberships#set-membership-as-default): `zendesk.groupMemberships.setAsDefault(userId, membershipId, body)`
+
+ ### Tags
+  ```
+    ENTITY_TYPES = {
+      organization: 'organizations',
+      ticket: 'tickets',
+      user: 'users',
+    };
+  ```
+
+ - [List All Tags](https://developer.zendesk.com/rest_api/docs/support/tags#list-tags): `zendesk.tags.list(queryParams)`
+ - [List Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#show-tags): `zendesk.tags.listFor(ticketId, entity, queryParams)`
+ - [Add Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#add-tags): `zendesk.tags.addForTicket(ticketId, entity, body)`
+ - [Set Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#set-tags): `zendesk.tags.setFor(ticketId, entity, body)`
+ - [Delete Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#remove-tags): `zendesk.tags.deleteForTicket(ticketId, entity)`
