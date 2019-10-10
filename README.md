@@ -177,6 +177,6 @@ Currently supported resources include:
 
  - [List All Tags](https://developer.zendesk.com/rest_api/docs/support/tags#list-tags): `zendesk.tags.list(queryParams)`
  - [List Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#show-tags): `zendesk.tags.listFor(ticketId, entity, queryParams)`
- - [Add Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#add-tags): `zendesk.tags.addForTicket(ticketId, entity, body)`
+ - [Add Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#add-tags): `zendesk.tags.addFor(ticketId, entity, body)`
  - [Set Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#set-tags): `zendesk.tags.setFor(ticketId, entity, body)`
- - [Delete Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#remove-tags): `zendesk.tags.deleteForTicket(ticketId, entity)`
+ - [Delete Tags For](https://developer.zendesk.com/rest_api/docs/support/tags#remove-tags): `zendesk.tags.deleteFor(ticketId, entity)`
